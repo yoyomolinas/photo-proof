@@ -34,6 +34,9 @@ To empower experimentation I have prepared `ratio_test.py`, a script that spits 
 
 > The results are defined in terms of error, accuracy, precision, and recall and would be different for every dataset. 
 
+*Example of a matched anchor and candidate photograph*
+![Low Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/match.png?raw=true )
+
 **The Quality Indicator** <br/>
 The higher the quality of the candidate photograph is the more likely it will find its pair anchor image. 
 
@@ -46,8 +49,24 @@ High Quality | Low Quality
 ![High Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/high_resolution.png?raw=true) | ![Low Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/low_resolution.png?raw=true )
 has a Laplacian variance of **7887.5**. |has a Laplacian variance of **401.3**.
 
+
+
 ## Implementation
 
-The Photo Proof project is developed in Python using OpenCV and many other great libraries. I've made this repository is made public to give back to the open-source community.
+The Photo Proof project is developed in Python using OpenCV and many other great libraries. This repository is made public to support the open-source community building great things.
 
-The engineering
+To recreate the environment use `conda`: 
+```
+conda create --name photo-proof --file ./requirements.txt
+```
+The research folder contains `ratio_test.py` and `laplacian_variance.py` files. Both scripts are designed to guide one through the methods outlined above.
+
+**Example Usage**
+```
+python ratio_test.py --feature_extractor=sift --data_dir=./data
+```
+```
+python laplacian_variance.py --data_dir=./data
+```
+
+Check out `research/utils.py` for the `DirectoryTree` class which could come in handy if you are working with folders with known structure. 
