@@ -23,7 +23,7 @@ Our intention is to compare features between images and hopefully find a match b
 The essential steps before declaring a positive or a negative match between an anchor image and a photograph in the wild are outlined below.
 
  1. Extract features for all images
-	 > Features are defined as high dimensional vectors that correspond to cartesian coordinates.
+	 > Features are defined as composed of high dimensional vectors and cartesian coordinates.
  3. Match features by recognizing nearest neighbors in clusters of features 
  4. Perform ratio test to eliminate false matches
 	> The ratio is a point's distance to its closest neighbor divided by its distance to the second closest neighbor. This value must be smaller than a threshold (typically around 0.5).
@@ -43,9 +43,11 @@ To quantify the quality of an image, I've decided to go with the variance of the
 
 High Quality | Low Quality
 --- | ---
-![High Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/high_resolution.png?raw=true "image tutke") | ![Low Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/low_resolution.png?raw=true "image tutke")
+![High Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/high_resolution.png?raw=true) | ![Low Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/low_resolution.png?raw=true )
 has a Laplacian variance of **7887.5**. |has a Laplacian variance of **401.3**.
 
 ## Implementation
 
-The Photo Proof project is developed in Python using OpenCV and many other great libraries. 
+The Photo Proof project is developed in Python using OpenCV and many other great libraries. I've made this repository is made public to give back to the open-source community.
+
+The engineering
