@@ -12,14 +12,14 @@ Our intention is to compare features between images and hopefully find a match b
 > An anchor can be any image. A positive match is found if the candidate contains the anchor in any orientation or scale.
 
 *Example of an anchor image* 
-![Anchor](https://github.com/yoyomolinas/photo-proof/blob/main/assets/mercedes_anchor.png?raw=true)
+![Anchor](https://github.com/yoyomolinas/photo-proof/blob/main/assets/mercedes_anchor.png?raw=true )
 
 *Example of a candidate photograph shot with a smartphone camera* 
-![Low Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/mercedes_proof.jpg?raw=true)
+![Low Quality](https://github.com/yoyomolinas/photo-proof/blob/main/assets/mercedes_proof.jpg?raw=true )
 
 ## Method
 
-**Steps for Feature Matching**
+**Steps for Feature Matching** <br/>
 The essential steps before declaring a positive or a negative match between an anchor image and a photograph in the wild are outlined below.
 
  1. Extract features for all images
@@ -34,7 +34,7 @@ To empower experimentation I have prepared `ratio_test.py`, a script that spits 
 
 > The results are defined in terms of error, accuracy, precision, and recall and would be different for every dataset. 
 
-**The Quality Indicator**
+**The Quality Indicator** <br/>
 The higher the quality of the candidate photograph is the more likely it will find its pair anchor image. 
 
 To quantify the quality of an image, I've decided to go with the variance of the Laplacian of the image. Higher Laplacian variance indicates better quality. 
