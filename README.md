@@ -59,7 +59,7 @@ To recreate the environment use `conda`:
 ```
 conda create --name photo-proof --file ./requirements.txt
 ```
-The research folder contains `ratio_test.py` and `laplacian_variance.py` files. Both scripts are designed to guide one through the methods outlined above.
+The `research` folder contains `ratio_test.py` and `laplacian_variance.py` files. Both scripts are designed to guide one through the methods outlined above.
 
 **Example Usage**
 ```
