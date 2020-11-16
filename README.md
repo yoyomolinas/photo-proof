@@ -20,7 +20,7 @@ Our intention is to compare features between images and hopefully find a match b
 ## Method
 
 **Steps for Feature Matching** <br/>
-The essential steps before declaring a positive or a negative match between an anchor image and a photograph in the wild are outlined below.
+The essential steps for declaring positive or negative matches between an anchor images and candidate photographs are outlined below.
 
  1. Extract features for all images
 	 > Features are defined as composed of high dimensional vectors and cartesian coordinates.
